@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CS3220 Course Page</title>
+    <link rel="stylesheet" type="text/css" href="homeStyles.css">
+
+    <script>
+        function changeCSS(cssFile, cssLinkIndex) {
+            var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+            var newlink = document.createElement("link");
+            newlink.setAttribute("rel", "stylesheet");
+            newlink.setAttribute("type", "text/css");
+            newlink.setAttribute("href", cssFile);
+
+            document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+    <p>This will be the home of Kyle Peront's CS3220 Course Page.</p>
+    <a onclick="changeCSS('homeStyles.css', 0);">Normal Mode</a><br>
+    <a onclick="changeCSS('darkMode.css', 0);">Dark Mode</a>
+</body>
+
+</html>
