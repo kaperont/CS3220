@@ -1,38 +1,62 @@
+/* General body properties */ 
 body {
-    background-image: url("https://assets.awwwards.com/awards/sites_of_the_day/2016/06/awwwards-sotd-TIMELIKES-1-.jpg");
-    /*background-image: url("../img/wooden-background.jpg");*/
+    background-image: url("../img/wooden-background.jpg");
+    /*background-image: url("https://assets.awwwards.com/awards/sites_of_the_day/2016/06/awwwards-sotd-TIMELIKES-1-.jpg");*/
     background-size: cover;
 }
 
-body h1 {
-    text-align: center;
-}
-
-div {
+/* White banner properties */
+.banner {
     position: absolute;
     top: 0;
     left: 0;
     background-color: white;
     width: 100%;
-    height: 8.5%;
+    height: 10%;
     opacity: 80%;
 }
 
-body div h1 {
+/* Page Title */
+.PageTitle {
+    text-align: center;
     font-family: "Ink Free";
     font-weight: bolder;
+    margin-top: 13px;
+    margin-bottom: 0px;
 }
 
-/*
-h2 {
-    color: white;
+/* Page Author */
+.PageAuthor {
+    text-align: center;
+    font-family: "Ink Free";
+    font-weight: bolder;
+    margin-top: 3px;
 }
 
-p {
-    color: white;
+/* Big Box Formatting */
+.bigBox {
+    /* Set Margins */
+    margin-left: 41.8%;
+    margin-top: 11%;
+
+    width: 400px;
+    height: 400px;
 }
 
-a {
-    color: white;
+/* P1 Box Dimmensions */
+.P1-Box {
+    float: left;
+    background-color: whitesmoke;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    padding: 2px;
+    margin: 1px;
 }
-*/
+
+/* Text Properties */
+.P-Texts {
+    text-align: center;
+    font-family: "Ink Free";
+    font-size: x-large;
+}
