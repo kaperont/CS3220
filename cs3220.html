@@ -1,35 +1,82 @@
 <!DOCTYPE html>
+
+<!-------------------------------
+Author:     Kyle Peront
+File:       cs3220.html
+Purpose:    Home course page.
+-------------------------------->
+
 <html lang="en">
 
 <head>
     <title>CS3220 Course Page</title>
     <link rel="icon" href="TermProject/img/web-applications-icon-1.jpg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="TermProject/Stylesheets/homeStyles.css">
-
-    <script>
-        function changeCSS(cssFile, cssLinkIndex) {
-            var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
-
-            var newlink = document.createElement("link");
-            newlink.setAttribute("rel", "stylesheet");
-            newlink.setAttribute("type", "text/css");
-            newlink.setAttribute("href", cssFile);
-
-            document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
-        }
-    </script>
+    
 </head>
 
 <body>
-    <div>
-        <h1>Web Applications</h1>
+
+    <!-- COURSE NAME -->
+    <div class="banner">
+        <h1 class="PageTitle">Web Applications</h1>
+        <h4 class="PageAuthor">By Kyle Peront</h4>
     </div>
     <br><br><br><br>
-    <h2>Hello World!</h2>
-    <p>This will be the home of Kyle Peront's CS3220 Course Page.</p>
-    <a onclick="changeCSS('TermProject/Stylesheets/homeStyles.css', 0);">Normal Mode</a><br>
-    <a onclick="changeCSS('TermProject/Stylesheets/darkMode.css', 0);">Dark Mode</a><br>
-    <a href="TermProject/HTML/Project_1.html">Project One</a>
+
+    <!-- Surrounding box for Project Boxes -->
+    <div class="bigBox">
+
+        <!-- PROJECT 1 BOX -->
+        <a href="TermProject/HTML/Project_1.html">
+            <div class="P1-Box">
+                <p class="P-Texts">Project 1</p>
+            </div>
+
+        </a>
+
+        <!-- PROJECT 2 BOX -->
+        <div class="P1-Box">
+            <p class="P-Texts">Project 2</p>
+        </div>
+
+        <!-- PROJECT 3 BOX -->
+        <div class="P1-Box">
+            <p class="P-Texts">Project 3</p>
+        </div>
+
+        <!-- PROJECT 4 BOX -->
+        <div class="P1-Box">
+            <p class="P-Texts">Project 4</p>
+        </div>
+
+        <!-- PROJECT 5 BOX -->
+        <div class="P1-Box">
+            <p class="P-Texts">Project 5</p>
+        </div>
+
+        <!-- PROJECT 6 BOX -->
+        <div class="P1-Box">
+            <p class="P-Texts">Project 6</p>
+        </div>
+
+        <!-- EMPTY BOX -->
+        <div class="P1-Box">
+        </div>
+
+        <!-- CHOICE AWARDS BOX -->
+        <a href="http://judah.cedarville.edu/peopleschoice/index.php">
+            <div class="P1-Box">
+                <p class="P-Texts">Choice Awards</p>
+            </div>
+        </a>
+
+        <!-- EMPTY BOX -->
+        <div class="P1-Box">
+        </div>
+
+    </div>
+
 </body>
 
 </html>
