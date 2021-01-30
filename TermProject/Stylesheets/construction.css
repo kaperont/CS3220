@@ -1,0 +1,67 @@
+/******************************************
+Author:     Kyle Peront
+File:       construction.css
+Purpose:    Construction page Styles Sheet.
+******************************************/
+
+body {
+    
+    background-image: url("../img/construction.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+
+.announcement {
+
+    font-size: 32pt;
+    text-align: center;
+    font-family: "Ink Free";
+    font-weight: bolder;
+    color: white;
+
+    margin: 7% auto 2% auto;
+
+}
+
+.selection-container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 5px;
+
+    background-color: #1b262c;
+    border-radius: 3%;
+    box-shadow: -6px 8px 15px black;
+
+    padding: 1% 1%;
+    margin: 2.5% 35%;
+    justify-content: center;
+
+}
+
+.selection {
+
+    border: 1px solid black;
+    border-radius: 10%;
+
+    background-color: whitesmoke;
+    justify-content: center;
+
+    text-align: center;
+    text-decoration: none;
+    transition: all .08s ease-in-out;
+}
+
+.selection:hover {
+    transform: scale(1.04);
+}
+
+.selection-text {
+
+    text-align: center;
+    font-family: "Ink Free";
+    font-size: x-large;
+
+}
