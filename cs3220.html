@@ -4,6 +4,8 @@
 Author:     Kyle Peront
 File:       cs3220.html
 Purpose:    Home course page.
+Last Edit:  01/30/2021 @ 3:37
+Uploaded:   Yes
 -------------------------------->
 
 <html lang="en">
@@ -11,71 +13,111 @@ Purpose:    Home course page.
 <head>
     <title>CS3220 Course Page</title>
     <link rel="icon" href="TermProject/img/web-applications-icon-1.jpg" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="TermProject/Stylesheets/homeStyles.css">
+    <link rel="stylesheet" type="text/css" href="TermProject/Stylesheets/home.css">
     
 </head>
 
 <body>
-
-    <!-- COURSE NAME -->
-    <div class="banner">
+    
+    <!----- BANNER ----->
+    <div class=banner-container>
         <h1 class="PageTitle">Web Applications</h1>
         <h4 class="PageAuthor">By Kyle Peront</h4>
     </div>
-    <br><br><br><br>
 
-    <!-- Surrounding box for Project Boxes -->
-    <div class="bigBox">
 
-        <!-- PROJECT 1 BOX -->
-        <a href="TermProject/HTML/Project_1.html">
-            <div class="P1-Box">
-                <p class="P-Texts">Project 1</p>
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+
+
+        <!-- LEFT VERSE BOX -->
+        <div id="left">
+
+            <div class="verse-container">
+                <div class="verse-box">
+                    <p class="P-Texts">You will seek me and find me, when you seek me with all your heart.</p>
+                    <p style="text-align: center; font-family: Ink Free;">Jeremiah 29:13</p>
+                </div>
             </div>
 
-        </a>
-
-        <!-- PROJECT 2 BOX -->
-        <div class="P1-Box">
-            <p class="P-Texts">Project 2</p>
         </div>
 
-        <!-- PROJECT 3 BOX -->
-        <div class="P1-Box">
-            <p class="P-Texts">Project 3</p>
-        </div>
 
-        <!-- PROJECT 4 BOX -->
-        <div class="P1-Box">
-            <p class="P-Texts">Project 4</p>
-        </div>
+        <!-- CENTER PROJECT BOX -->
+        <div id="middle">
 
-        <!-- PROJECT 5 BOX -->
-        <div class="P1-Box">
-            <p class="P-Texts">Project 5</p>
-        </div>
+            <!-- Surrounding box for Project Boxes -->
+            <div class="bigBox">
 
-        <!-- PROJECT 6 BOX -->
-        <div class="P1-Box">
-            <p class="P-Texts">Project 6</p>
-        </div>
+                <!-- PROJECT 1 BOX -->
+                <a class="P-Box", href="TermProject/HTML/Project_1.html">
+                    <p class="P-Texts">Project 1</p>
+                </a>
 
-        <!-- EMPTY BOX -->
-        <div class="P1-Box">
-        </div>
+                <!-- PROJECT 2 BOX -->
+                <a class="P-Box", href="TermProject/HTML/Project_2.html">
+                    <p class="P-Texts">Project 2</p>
+                </a>
 
-        <!-- CHOICE AWARDS BOX -->
-        <a href="http://judah.cedarville.edu/peopleschoice/index.php">
-            <div class="P1-Box">
-                <p class="P-Texts">Choice Awards</p>
+                <!-- PROJECT 3 BOX -->
+                <a class="P-Box", href="TermProject/HTML/Project_3.html">
+                    <p class="P-Texts">Project 3</p>
+                </a>
+
+                <!-- PROJECT 4 BOX -->
+                <a class="P-Box", href="TermProject/HTML/Project_4.html">
+                    <p class="P-Texts">Project 4</p>
+                </a>
+
+                <!-- PROJECT 5 BOX -->
+                <a class="P-Box", href="TermProject/HTML/Project_5.html">
+                    <p class="P-Texts">Project 5</p>
+                </a>
+
+                <!-- PROJECT 6 BOX -->
+                <a class="P-Box", href="TermProject/HTML/Project_6.html">
+                    <p class="P-Texts">Project 6</p>
+                </a>
+
+                <!-- EMPTY BOX -->
+                <div class="P-Box-Hoverless">
+                </div>
+
+                <!-- CHOICE AWARDS BOX -->
+                <a class="P-Box", href="http://judah.cedarville.edu/peopleschoice/index.php">
+                    <p class="P-Texts">Judah</p>
+                </a>
+
+                <!-- EMPTY BOX -->
+                <div class="P-Box-Hoverless">
+                </div>
+
             </div>
-        </a>
 
-        <!-- EMPTY BOX -->
-        <div class="P1-Box">
         </div>
+        
+        
+        <!-- RIGHT VERSE BOX -->
+        <div id="right">
+
+            <div class="verse-container">
+                <div class="verse-box">
+                    <p class="P-Texts">And let us not grow weary of doing good, for in due season we will reap, if we do not give up.</p>
+                    <p style="text-align: center; font-family: Ink Free;">Galatians 6:9</p>
+                </div>
+            </div>
+
+        </div>
+
 
     </div>
+
+
+
+    <!-- FOOTER -->
+    <div class="footer"></div>
+
+
 
 </body>
 

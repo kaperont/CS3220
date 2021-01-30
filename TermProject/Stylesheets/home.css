@@ -1,0 +1,205 @@
+/******************************************
+Author:     Kyle Peront
+File:       home.css
+Purpose:    Home course page Styles Sheet.
+******************************************/
+
+
+
+
+
+/* General body properties */ 
+body {
+
+    background-color: #0f4c75;
+
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 7%;
+
+    background-color: #3282b8;
+}
+
+
+
+
+
+/*****************************  BANNER PROPERTIES  *****************************/
+.banner-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background: linear-gradient(-55deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Page Title */
+.PageTitle {
+
+    margin: 0.7% auto 0 auto;
+
+    text-align: center;
+    font-family: "Ink Free";
+    font-weight: bolder;
+    color: white;
+
+}
+
+
+/* Page Author */
+.PageAuthor {
+
+    margin: 0.3% auto 0.7% auto;
+
+    text-align: center;
+    font-family: "Ink Free";
+    font-weight: bolder;
+    color: white;
+
+}
+/*****************************  BANNER PROPERTIES  *****************************/
+
+
+
+
+
+/**************************  MAIN SECTION PROPERTIES  **************************/
+
+/* Container Properties :: Holds #left and #right */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10% 0% 2% 0%;
+}
+
+/* #left Properties :: Holds .bigBox */
+#left {
+    display: flex;
+    flex-grow: 1;
+    margin: 0% 10%;
+}
+
+/* #middle Properties :: Holds .bigBox */
+#middle {
+    display: flex;
+    flex-grow: 1;
+    padding: 0 15%;
+}
+
+/* #right Properties :: Holds .verse-container */
+#right {
+    display: flex;
+    flex-grow: 1;
+    margin: 0% 10%;
+}
+
+/**************************  MAIN SECTION PROPERTIES  **************************/
+
+
+
+
+
+/*************************  INNER-DIVISIONS' PROPERTIES  *************************/
+
+/* Big Box Properties :: Holds .P-Box (ct=9) */
+.bigBox {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+
+    background-color: #1b262c;
+    border-radius: 3%;
+    box-shadow: -6px 8px 15px black;
+
+    padding: 2% 2%;
+    justify-content: center;
+}
+
+/* P Box Properties :: Holds .P-Texts */
+.P-Box {
+    
+    padding: 0 8%;
+    border: 1px solid black;
+    border-radius: 10%;
+
+    background-color: whitesmoke;
+    justify-content: center;
+
+    text-align: center;
+    text-decoration: none;
+    transition: all .08s ease-in-out;
+}
+
+/* P-Box Hover Properties */
+.P-Box:hover {
+    transform: scale(1.04);
+}
+
+/* P Box Properties :: Holds .P-Texts */
+.P-Box-Hoverless {
+    
+    padding: 0 4%;
+    border: 1px solid black;
+    border-radius: 10%;
+
+    background-color: whitesmoke;
+    justify-content: center;
+
+    text-align: center;
+    text-decoration: none;
+
+}
+
+/* Text Properties */
+.P-Texts {
+
+    text-align: center;
+    font-family: "Ink Free";
+    font-size: x-large;
+
+}
+
+/* Verse Container Properties */
+.verse-container {
+    background-color: #1b262c;
+    border-radius: 3%;
+    box-shadow: -6px 8px 15px black;
+}
+
+/* Verse Box Properties */
+.verse-box {
+
+    padding: 0 8%;
+    border: 1px solid black;
+    border-radius: 10%;
+    margin: 10% 10%;
+
+    background-color: whitesmoke;
+
+    text-align: center;
+    text-decoration: none;
+
+}
+/*************************  INNER-DIVISIONS' PROPERTIES  *************************/
