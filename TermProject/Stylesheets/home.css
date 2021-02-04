@@ -11,7 +11,7 @@ Purpose:    Home course page Styles Sheet.
 /* General body properties */ 
 body {
 
-    background-color: #0f4c75;
+    background-color: #7EA4B3;
 
 }
 
@@ -22,7 +22,7 @@ body {
     width: 100%;
     height: 7%;
 
-    background-color: #3282b8;
+    background-color: #7EA4B3;
 }
 
 
@@ -36,9 +36,10 @@ body {
     left: 0;
     right: 0;
 
-    background: linear-gradient(-55deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-55deg, #CFB7AE, #CFAEC6, #AEC6CF, #AECFB7);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
+    
 }
 
 @keyframes gradient {
@@ -129,7 +130,7 @@ body {
     column-gap: 5px;
     row-gap: 5px;
 
-    background-color: #1b262c;
+    background-color: #AECECF;
     border-radius: 3%;
     box-shadow: -6px 8px 15px black;
 
@@ -183,7 +184,7 @@ body {
 
 /* Verse Container Properties */
 .verse-container {
-    background-color: #1b262c;
+    background-color: #AECECF;
     border-radius: 3%;
     box-shadow: -6px 8px 15px black;
 }

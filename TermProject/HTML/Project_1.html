@@ -1,28 +1,302 @@
 <!DOCTYPE html>
+
+<!-------------------------------
+Author:     Kyle Peront
+File:       Project_1.html
+Purpose:    Project 1 HTML Page.
+-------------------------------->
+
 <html lang="en">
 
 <head>
     <title>Interactive APE</title>
     <link rel="icon" href="../img/ape_icon.jpg" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../Stylesheets/construction.css">
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/project-1.css">
 </head>
 
 <body>
 
-    <div class="announcement">
-       This will be the home of Project 1
-       <br>
-       Come back soon!
+    <!--------HEADER DIVISION-------->
+    <div id="header">
+
+        <!--------HEADER CU LOGO-------->
+        <a id="logo-link" href="https://www.cedarville.edu">
+            <img id="logo" alt="CU-Logo" src="../img/CU-logo-1.png">
+        </a>
+
+        <!--------HEADER TITLE-------->
+        <h2 id="header-title">Academic Planning</h2>
+
+        <!--------WEBSITE VERSION-------->
+        <p id="version-number">version 1.0</p>
+
+        <!--------HEADER BUTTONS CONTAINER-------->
+        <div id="header-options">
+
+            <!--------JUDAH BUTTON-------->
+            <a class="header-button" id="judah-button" href="http://judah.cedarville.edu/peopleschoice/index.php">
+                <p class="header-button-text">Judah</p>
+            </a>
+            <!--------HOME BUTTON-------->
+            <a class="header-button" id="home-button" href="../../cs3220.html">
+                <p class="header-button-text">Home</p>
+            </a>
+            <!--------SAVE BUTTON-------->
+            <a class="header-button" id="save-button" href="">
+                <p class="header-button-text">Save</p>
+            </a>
+
+        </div>
+
     </div>
 
-    <div class="selection-container">
-        <a class="selection", href="../../cs3220.html">
-            <p class="selection-text">Home</p>
-        </a>
-        <a class="selection", href="http://judah.cedarville.edu/peopleschoice/index.php">
-            <p class="selection-text">Judah</p>
-        </a>
+
+    <!--------MAIN CONTAINER-------->
+    <div id="main-container">
+
+
+        <!--------UPPER DIVISION-------->
+        <div id="upper">
+
+
+            <!--------REQUIREMENTS DIVISION-------->
+            <div class="requirements-division">
+                <div class="section-title">Requirements</div>
+                <div class="req-table">
+                    <p class="req-class-placeholder">&#8226;  CS-1210 C++ Programming</p>
+                    <p class="req-class-placeholder">&#8226;  CS-1220 Object-Oriented Design with C++</p>
+                    <p class="req-class-placeholder">&#8226;  CS-2210 Data Structures Using Java</p>
+                    <p class="req-class-placeholder">&#8226;  CS-3210 Programming Language Survey</p>
+                    <p class="req-class-placeholder">&#8226;  CS-3220 Web Applications</p>
+                    <p class="req-class-placeholder">&#8226;  CS-3310 Operating Systems</p>
+                    <p class="req-class-placeholder">&#8226;  CS-3350 Foundations of Computer Security</p>
+                    <p class="req-class-placeholder">&#8226;  CS-3410 Algorithms</p>
+                    <p class="req-class-placeholder">&#8226;  CS-3510 Compiler Theory & Practice</p>
+                    <p class="req-class-placeholder">&#8226;  CS-3610 Database Organization & Design</p>
+                    <p class="req-class-placeholder">&#8226;  CS-4810 Software Engineering I</p>
+                    <p class="req-class-placeholder">&#8226;  CS-4820 Software Engineering II</p>
+                    <p class="req-class-placeholder">&#8226;  EGCP-1010 Digital Logic Design</p>
+                    <p class="req-class-placeholder">&#8226;  EGCP-3210 Computer Arhitecture</p>
+                    <p class="req-class-placeholder">&#8226;  EGCP-4310 Computer Networks</p>
+                    <p class="req-class-placeholder">&#8226;  EGGN-3110 Professional Ethics</p>
+                    <p class="req-class-placeholder">&#8226;  EGGN-4010 Senior Seminar</p>
+                    <p class="req-class-placeholder">&#8226;  MATH-2520 Discrete Math and Probability Principles for Computer Science</p>
+                </div>
+            </div>
+            <!--------/REQUIREMENTS DIVISION-------->
+
+
+            <!--------SEMESTER DIVISION-------->
+            <div class="semester-division">
+                <div class="section-title">Academic Plan: Version 1.0</div>
+
+
+                <!--------YEARS CONTAINER-------->
+                <div class="years-container">
+
+                    <div id="first-year">
+
+                        <div class="semester">
+                            <p class="semester-header">Fall 2018</p>
+                            <p class="semester-class">EGGN-1110 The Engineering Profession</p>
+                            <p class="semester-class">CS-1210 C++ Programming</p>
+                            <p class="semester-class">EGCP-1010 Digital Logic Design</p>
+                            <p class="semester-class">BTGE-1725 Bible & the Gospel</p>
+                            <p class="semester-class">ENG-1400 Composition</p>
+                            <p class="semester-class">MATH-1710 Calculus I</p>
+                        </div>
+                        <div class="semester">
+                            <p class="semester-header">Spring 2019</p>
+                            <p class="semester-class">MATH-1710 Calculus I</p>
+                            <p class="semester-class">CS-1220 Obj-Orient Design/C++</p>
+                            <p class="semester-class">PYCH-1600 General Psychology</p>
+                            <p class="semester-class">PEF-1990 Phys Act & the Christian Life</p>
+                            <p class="semester-class">HUM-1400 Intro to Humanities</p>
+                            <p class="semester-class">PFMU-3820 Men's Glee Club</p>
+                        </div>
+                        <div class="semester">
+                            <p class="semester-header">Summer 2019</p>
+                        </div>
+
+                    </div>
+
+                    <div id="second-year">
+
+                        <div class="semester">
+                            <p class="semester-header">Fall 2019</p>
+                            <p class="semester-class">COM-1100 Fundamentals of Speech</p>
+                            <p class="semester-class">CS-3350 Foundations Computer Security</p>
+                            <p class="semester-class">MATH-1720 Calculus II</p>
+                            <p class="semester-class">CS-3310 Operating Systems</p>
+                            <p class="semester-class">BTGE-2730 Old Testament Literature</p>
+                            <p class="semester-class">PFMU-3820 Men's Glee Club</p>
+                        </div>
+                        <div class="semester">
+                            <p class="semester-header">Spring 2020</p>
+                            <p class="semester-class">PHYS-2110 General Physics I</p>
+                            <p class="semester-class">GBIO-1000 Prin of Biology</p>
+                            <p class="semester-class">GSS-1100 Politics & American Culture</p>
+                            <p class="semester-class">CS-2210 Data Struct Using Java</p>
+                            <p class="semester-class">MATH-2520 Discrete Math/Prob Pri</p>
+                            <p class="semester-class">PFMU-3820 Men's Glee Club</p>
+                        </div>
+                        <div class="semester">
+                            <p class="semester-header">Summer 2020</p>
+                        </div>
+
+                    </div>
+
+                    <div id="third-year">
+
+                        <div class="semester">
+                            <p class="semester-header">Fall 2020</p>
+                            <p class="semester-class">BTGE-2740 New Testament Literature</p>
+                            <p class="semester-class">CS-3410 Algorithms</p>
+                            <p class="semester-class">EGCP-4310 Computer Networks</p>
+                            <p class="semester-class">HIST-1110 US History I</p>
+                            <p class="semester-class">PHYS-2120 General Physics II</p>
+                            <p class="semester-class">PFMU-3820 Men's Glee Club</p>
+                        </div>
+                        <div class="semester">
+                            <p class="semester-header">Spring 2021</p>
+                            <p class="semester-class">BTGE-3755 Theology I</p>
+                            <p class="semester-class">CS-3220 Web Applications</p>
+                            <p class="semester-class">CS-3610 Database Org & Design</p>
+                            <p class="semester-class">CS-4430 Machine Lrng/Intelligence</p>
+                            <p class="semester-class">EGCP-3210 Computer Architecture</p>
+                            <p class="semester-class">PFMU-3820 Men's Glee Club</p>
+                        </div>
+                        <div class="semester">
+                            <p class="semester-header">Summer 2021</p>
+                        </div>
+
+                    </div>
+
+                    <div id="fourth-year">
+
+                        <div class="semester">
+                            <p class="semester-header">Fall 2021</p>
+                            <p class="semester-class">CS-4810 Software Engineering I</p>
+                            <p class="semester-class">EGGN-4010 Senior Seminar</p>
+                            <p class="semester-class">BTGE-3765 Theology II</p>
+                            <p class="semester-class">CS-3210 Programming Language Survey</p>
+                            <p class="semester-class">CS-3320 Linux Systems Programming</p>
+                            <p class="semester-class">PLMU-1100 Piano (2cr)</p>
+                            <p class="semester-class">LIT-2340 Western Literature</p>
+                        </div>
+                        <div class="semester">
+                            <p class="semester-header">Spring 2022</p>
+                            <p class="semester-class">EGGN-3110 Professional Ethics</p>
+                            <p class="semester-class">CS-3510 Compilor Theory & Practice</p>
+                            <p class="semester-class">CS-4310 Cyber Operations</p>
+                            <p class="semester-class">CS-4330 Software Security</p>
+                            <p class="semester-class">CS-4820 Software Engineering II</p>
+                        </div>
+                        <div class="semester">
+                            <p class="semester-header">Summer 2022</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <!--------/YEARS CONTAINER-------->
+
+
+            </div>
+            <!--------/SEMESTER DIVISION-------->
+            
+            
+        </div>
+        <!--------/UPPER DIVISION-------->
+
+
+        <!--------LOWER DIVISION-------->
+        <div id="lower">
+
+
+            <!--------VALIDATION STATUS DIVISION-------->
+            <div class="validation-status-division">
+                <div class="section-title">Validation Status</div>
+                <div class="valid-table">
+                    <p class="valid-placeholder">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <!--------/VALIDATION STATUS DIVISION-------->
+
+
+            <!--------COURSE FINDER DIVISION-------->
+            <div class="course-finder-division">
+                <div class="section-title">Course Finder</div>
+                <div class="course-finder-table">
+
+                    <div class="course-finder-table-header">Course Finder</div>
+
+                    <div class="search-bar">
+                        <p id="num-entries">Showing 1 to 12 of 1,900 entries</p>
+                        <p style="text-align: right; font-size: 9pt;">Search:_____________</p>
+                    </div>
+
+                    <div class="course-database">
+                        <div id="course-id">
+                            <p class="database-text-1">COLL-0900</p>
+                            <p class="database-text-2">DEV-0900</p>
+                            <p class="database-text-1">ALHL-1000</p>
+                            <p class="database-text-2">BEBS-1000</p>
+                            <p class="database-text-1">BECE-1000</p>
+                            <p class="database-text-2">BETH-1000</p>
+                            <p class="database-text-1">BTBS-1000</p>
+                            <p class="database-text-2">BTCM-1000</p>
+                            <p class="database-text-1">BUS-1000</p>
+                            <p class="database-text-2">CHEM-1000</p>
+                            <p class="database-text-1">COM-1000</p>
+                            <p class="database-text-2">CY-1000</p>
+                        </div>
+                        <div id="course-name">
+                            <p class="database-text-1">Foundations</p>
+                            <p class="database-text-2">Intermediate Algebra</p>
+                            <p class="database-text-1">Introduction to the Allied Health Profession</p>
+                            <p class="database-text-2">Introduction to Biblical Studies</p>
+                            <p class="database-text-1">Orientation to Bible Ministries</p>
+                            <p class="database-text-2">Introduction to the Theological Task</p>
+                            <p class="database-text-1">Introduction to Biblical Studies</p>
+                            <p class="database-text-2">Orientation to Bible Ministries</p>
+                            <p class="database-text-1">The Business Profession</p>
+                            <p class="database-text-2">Principles of Chemistry</p>
+                            <p class="database-text-1">Introduction to Communication Arts</p>
+                            <p class="database-text-2">Introduction to Cubersecurity</p>
+                        </div>
+                        <div id="course-credits">
+                            <p class="database-text-1">1.0</p>
+                            <p class="database-text-2">2.0</p>
+                            <p class="database-text-1">1.0</p>
+                            <p class="database-text-2">1.0</p>
+                            <p class="database-text-1">1.0</p>
+                            <p class="database-text-2">1.0</p>
+                            <p class="database-text-1">1.0</p>
+                            <p class="database-text-2">2.0</p>
+                            <p class="database-text-1">4.0</p>
+                            <p class="database-text-2">3.0</p>
+                            <p class="database-text-1">3.0</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--------/COURSE FINDER DIVISION-------->
+
+
+        </div>
+        <!--------/LOWER DIVISION-------->
+
+
     </div>
+    <!--------/MAIN CONTAINER-------->
+
 
 </body>
 

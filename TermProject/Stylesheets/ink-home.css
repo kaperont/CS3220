@@ -1,0 +1,135 @@
+/* General body properties */ 
+body {
+
+    background-image: url("../img/ink.png");
+    background-position-x: right;
+    background-repeat: no-repeat;
+
+}
+
+.header-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(rgb(151, 151, 151), rgba(255, 255, 255, 0));
+}
+
+/* Page Title */
+.PageTitle {
+
+    text-align: center;
+    font-family: "Ink Free";
+    font-weight: bolder;
+    font-size: 36pt;
+    color: black;
+
+    margin-top: 1%;
+    margin-bottom: 0%;
+
+}
+
+/* Page Author */
+.PageAuthor {
+
+    text-align: center;
+    font-family: "Ink Free";
+    font-weight: bolder;
+    font-size: 16pt;
+    color: black;
+
+    margin-top: 0.5%;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 18% 0% 2% 0%;
+}
+
+#left {
+    display: flex;
+    flex-grow: 1;
+    margin: 0% 28% 0% 0.5%;
+}
+
+#right {
+    display: flex;
+    flex-grow: 1;
+    margin: 0% 40% 50% 0%;
+}
+
+/* Big Box Formatting */
+.bigBox {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding: 2% 2%;
+    justify-content: center;
+}
+
+/* P Box Properties :: Holds .P-Texts */
+.P-Box {
+    
+    padding: 0 8%;
+
+    text-align: center;
+    text-decoration: none;
+    transition: all .08s ease-in-out;
+
+    text-align: center;
+    font-family: "Ink Free";
+    font-size: 17pt;
+    color: white;
+}
+
+/* P-Box Hover Properties */
+.P-Box:hover {
+    transform: scale(1.04);
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* P Box Properties :: Holds .P-Texts */
+.P-Box-Hoverless {
+    
+    padding: 0 4%;
+    border: 1px solid black;
+    border-radius: 10%;
+
+    justify-content: center;
+
+    text-align: center;
+    text-decoration: none;
+
+}
+
+/* Text Properties */
+.P-Texts {
+
+    text-align: center;
+    font-family: "Ink Free";
+    font-size: x-large;
+    color: white;
+
+}
+
+/* Text Properties */
+.Verse-Texts {
+
+    text-align: center;
+    font-family: "Ink Free";
+    font-size: x-large;
+
+}
+
+.verse-box {
+    background-color: #0f4c75;
+    border-radius: 3%;
+    
+    padding: 2% 2%;
+    justify-content: center;
+}
