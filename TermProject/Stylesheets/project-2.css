@@ -3,3 +3,408 @@ Author:     Kyle Peront
 File:       project-2.css
 Purpose:    Project Two page Styles Sheet.
 ******************************************/
+
+
+/******************************************/
+/* Template Comment Seperator             */
+/******************************************/
+body {
+    margin: 0;
+    background-color: #BDBFC0;
+}
+
+#main-container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    row-gap: 5px;
+    height: 100vh;
+}
+
+
+
+/***** HEADER DIVISION ********************/
+
+    /*** HEADER STRUCTURE ***/
+#header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 8fr 3fr;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    height: 75px;
+    border-bottom: 2px solid #121B1E;
+
+    background-color: #BDBFC0;
+    /*background-color: #8EAFBC;*/
+    /*background-color: #aec6cf;*/
+}
+
+#logo-link {
+    grid-column: 1 / 2;
+    max-height: 70px;
+    max-width: 140px;
+}
+
+    /*** HEADER CU LOGO ***/
+#logo {
+    height: 100%;
+}
+
+    /*** HEADER TITLE ***/
+#header-title {
+    grid-column: 2 / 3;
+
+    margin: 0;
+
+    font-size: 22pt;
+    font-family: "Ink Free";
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+}
+
+#version-number {
+    grid-column: 3 / 4;
+
+    margin: 0;
+
+    font-size: 10pt;
+    font-family: "Consolas";
+    position: absolute;
+    bottom: 8px;
+    left: 2px;
+}
+
+
+    /*** HEADER BUTTONS ***/
+#header-options {
+    grid-column: 4 / 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding: 5% 5%;
+    grid-gap: 7px;
+}
+
+.header-button {
+    border: 1px solid black;
+    border-radius: 10%;
+    height: 25px;
+    width: 50px;
+    margin: auto auto;
+
+    background-color: #CFBFD4;
+
+    text-align: center;
+    text-decoration: none;
+}
+
+.header-button:hover {
+    background-color: #C4B0CA;
+}
+
+.header-button-text {
+    margin: 3px auto;
+    color: black;
+    font-weight: 600;
+    font-family: "Arial";
+    font-size: 11pt;
+    text-align: center;
+    justify-content: center;
+}
+
+/******************************************/
+
+
+
+
+/***** LEFT DIVISION *********************/
+
+#left {
+    grid-column: 1 / 2;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    margin: 82px 0 0 5px;
+    height: fit-content;
+}
+
+    /*** REQUIREMENTS TAB (TOP) ***/
+.requirements-division {
+    grid-row: 1 / 2;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+}
+
+.section-title {
+    background: linear-gradient(0deg, white 0.5%, #8EAFBC);
+    height: 20px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 0 5px 0;
+
+    text-align: center;
+    font-weight: 600;
+}
+
+.req-table {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin: 0;
+
+    background-color: #8EAFBC;
+    border: 1px solid #121B1E;
+    border-radius: 2%;
+}
+
+.req-class-placeholder {
+    font-size: 9pt;
+    font-family: "Arial";
+    margin: 2px 0 0 8px;
+}
+
+.req-class-placeholder:hover {
+    background-color: #7EA4B3;
+    cursor: pointer;
+}
+
+
+    /*** VALIDATION TAB (BOTTOM) ***/
+.validation-status-division {
+    grid-row: 2 / 3;
+
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.valid-table {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    
+    margin: 0;
+    height: fit-content;
+
+    background-color: #8EAFBC;
+    border: 1px solid #121B1E;
+    border-radius: 2%;
+}
+
+.field {
+    margin: 7px auto;
+}
+
+.box-title {
+    font-size: 10pt;
+    font-family: "Arial";
+}
+
+.form {
+    margin: auto;
+}
+
+.input_box {
+    margin-bottom: 7px;
+}
+
+.submit {
+    margin-bottom: 7px;
+}
+
+/******************************************/
+
+
+
+
+/***** RIGHT DIVISION *********************/
+
+#right {
+    grid-column: 2 / 3;
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    margin: 82px 5px 0 5px;
+    max-height: 100vh;
+    height: fit-content;
+}
+
+
+    /*** SEMESTER TAB (TOP) ***/
+.semester-division {
+    grid-row: 1 / 2;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+}
+
+.years-container {
+    display: grid;
+    grid-template-rows: repeat(4 1fr);
+    row-gap: 5px;
+    margin: 0;
+}
+
+#first-year {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+#second-year {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+#third-year {
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+#fourth-year {
+    grid-row: 4 / 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+.semester {
+    border: 1px solid #121B1E;
+    border-radius: 2%;
+
+    background-color: #8EAFBC;
+    text-decoration: none;
+}
+
+.semester-header {
+    font-size: 9pt;
+    font-weight: 600;
+    font-family: "Arial";
+    margin: 4px;
+}
+
+.semester-class {
+    font-size: 8pt;
+    font-family: "Arial";
+    margin: 3px 8px;
+}
+
+.semester-class:hover {
+    background-color: #7EA4B3;
+    cursor: pointer;
+}
+
+
+    /*** FINDER TAB (BOTTOM) ***/
+.course-finder-division {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.course-finder-table {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 0.2fr 0.2fr 4fr;
+
+    margin: 0;
+    height: fit-content;
+    width: 100%;
+
+    background-color: #8EAFBC;
+    border: 1px solid #121B1E;
+    border-radius: 0.7%;
+}
+
+.course-finder-table-header {
+    grid-row: 1 / 2;
+    font-size: 16pt;
+    font-weight: 600;
+    font-family: "Arial";
+    margin: 4px;
+    max-height: 100%;
+}
+
+.search-bar {
+    margin: 4px;
+    right: 0;
+}
+
+#num-entries {
+    font-size: 8pt;
+}
+
+.course-database {
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 2fr 8fr 1fr;
+    max-height: 100%;
+    border-top: 2px solid #121B1E;
+}
+
+#course-id {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-rows: repeat(12 1fr);
+    max-height: 100%;
+}
+
+#course-name {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: repeat(12 1fr);
+    max-height: 100%;
+}
+
+#course-credits {
+    grid-column: 3 / 4;
+    display: grid;
+    grid-template-rows: repeat(12 1fr);
+    max-height: 100%;
+}
+
+.database-text-1 {
+    background-color: #9EBBC6;
+    font-size: 8pt;
+    font-family: "Arial";
+    text-align: left;
+    margin: 0 2px;
+}
+
+.database-text-2 {
+    background-color: #BED1D8;
+    font-size: 8pt;
+    font-family: "Arial";
+    text-align: left;
+    margin: 0 2px;
+
+}
+
+.database-text-1:hover {
+    cursor: pointer;
+}
+
+.database-text-2:hover {
+    cursor: pointer;
+}
+
+.search_box {
+    width: 225px;
+    height: 13px;
+}
+
+/******************************************/

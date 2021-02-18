@@ -1,28 +1,203 @@
 <!DOCTYPE html>
+
+<!-------------------------------
+Author:     Kyle Peront
+File:       Project_2.html
+Purpose:    Project 2 HTML Page.
+-------------------------------->
+
 <html lang="en">
 
 <head>
     <title>Interactive APE</title>
     <link rel="icon" href="../img/ape_icon.jpg" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../Stylesheets/construction.css">
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/project-2.css">
 </head>
 
-<body>
+<script src="../js/main.js"></script>
 
-    <div class="announcement">
-       This will be the home of Project 2
-       <br>
-       Come back soon!
+<body onload="load()">
+
+    <!--------HEADER DIVISION-------->
+    <div id="header">
+
+        <!--------HEADER CU LOGO-------->
+        <a id="logo-link" href="https://www.cedarville.edu">
+            <img id="logo" alt="CU-Logo" src="../img/CU-logo-1.png">
+        </a>
+
+        <!--------HEADER TITLE-------->
+        <h2 id="header-title">Academic Planning</h2>
+
+        <!--------WEBSITE VERSION-------->
+        <p id="version-number">version 1.0</p>
+
+        <!--------HEADER BUTTONS CONTAINER-------->
+        <div id="header-options">
+
+            <!--------JUDAH BUTTON-------->
+            <a class="header-button" id="judah-button" href="http://judah.cedarville.edu/peopleschoice/index.php">
+                <p class="header-button-text">Judah</p>
+            </a>
+            <!--------HOME BUTTON-------->
+            <a class="header-button" id="home-button" href="../../cs3220.html">
+                <p class="header-button-text">Home</p>
+            </a>
+            <!--------SAVE BUTTON-------->
+            <a class="header-button" id="save-button" href="">
+                <p class="header-button-text">Save</p>
+            </a>
+
+        </div>
+
     </div>
 
-    <div class="selection-container">
-        <a class="selection", href="../../cs3220.html">
-            <p class="selection-text">Home</p>
-        </a>
-        <a class="selection", href="http://judah.cedarville.edu/peopleschoice/index.php">
-            <p class="selection-text">Judah</p>
-        </a>
+
+    <!--------MAIN CONTAINER-------->
+    <div id="main-container">
+
+
+        <!--------LEFT DIVISION-------->
+        <div id="left">
+
+
+            <!--------REQUIREMENTS DIVISION-------->
+            <div class="requirements-division">
+                <div class="section-title">Requirements</div>
+                <div class="req-table", id="req-table">
+                </div>
+            </div>
+            <!--------/REQUIREMENTS DIVISION-------->
+
+
+            <!--------VALIDATION STATUS DIVISION-------->
+            <div class="validation-status-division">
+                <div class="section-title">Validation Status</div>
+                <div class="valid-table">
+
+                    <form method="POST" name="validator" action="http://judah.cedarville.edu/echo.php" class="form" id="form_1" onsubmit="return(validate(digits))">
+
+                        <fieldset class="field">
+                           <legend class="box-title">Do you have a life?</legend>
+                            <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Yes</label>
+                            <input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label>
+                        </fieldset>
+
+                        <label for="ssn-box" class="box-title">What's your SSN?</label>
+                        <input type="text" placeholder="xxx-xx-xxxx" required name="ssn" class="input_box" id="ssn-box" onchange="validate_Digits(ssn)">
+                        <br>
+
+                        <label for="digits-box" class="box-title">What's your phone number?</label>
+                        <input type="text" placeholder="xxx-xxx-xxxx" required name="digits" class="input_box" id="digits-box">
+
+                        <input type="submit" value="Submit" class="submit" id="submit">
+
+                    </form>
+
+                </div>
+            </div>
+            <!--------/VALIDATION STATUS DIVISION-------->
+
+            
+        </div>
+        <!--------/LEFT DIVISION-------->
+
+
+
+
+        <!--------RIGHT DIVISION-------->
+        <div id="right">
+
+
+            <!--------SEMESTER DIVISION-------->
+            <div class="semester-division" id="sem-div">
+
+                <!--------YEARS CONTAINER-------->
+                <div class="years-container">
+
+                    <div id="first-year">
+
+                        <div class="semester", id="fa18"></div>
+                        <div class="semester", id="sp19"></div>
+                        <div class="semester", id="sum19">
+                            <p class="semester-header">Summer 2019</p>
+                        </div>
+
+                    </div>
+
+                    <div id="second-year">
+
+                        <div class="semester", id="fa19"></div>
+                        <div class="semester", id="sp20"></div>
+                        <div class="semester", id="sum20">
+                            <p class="semester-header">Summer 2020</p>
+                        </div>
+
+                    </div>
+
+                    <div id="third-year">
+
+                        <div class="semester", id="fa20"></div>
+                        <div class="semester", id="sp21"></div>
+                        <div class="semester", id="sum21">
+                            <p class="semester-header">Summer 2021</p>
+                        </div>
+
+                    </div>
+
+                    <div id="fourth-year">
+
+                        <div class="semester", id="fa21"></div>
+                        <div class="semester", id="sp22"></div>
+                        <div class="semester", id="sum22">
+                            <p class="semester-header">Summer 2022</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <!--------/YEARS CONTAINER-------->
+
+
+            </div>
+            <!--------/SEMESTER DIVISION-------->            
+
+
+            <!--------COURSE FINDER DIVISION-------->
+            <div class="course-finder-division">
+                <div class="section-title">Course Finder</div>
+                <div class="course-finder-table">
+
+                    <div class="course-finder-table-header">Course Finder</div>
+
+                    <div class="search-bar">
+                        <label for="search-box">Search
+                            <input type="text" placeholder="CS3220" name="search" class="search_box" id="search-box">
+                        </label>
+                        <p id="num-entries">Showing 1 to 12 of 1,900 entries</p>
+                    </div>
+
+                    <div class="course-database">
+                        <div id="course-id">
+                        </div>
+                        <div id="course-name">
+                        </div>
+                        <div id="course-credits">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--------/COURSE FINDER DIVISION-------->
+
+
+        </div>
+        <!--------/RIGHT DIVISION-------->
+
+
     </div>
+    <!--------/MAIN CONTAINER-------->
 
 </body>
 
