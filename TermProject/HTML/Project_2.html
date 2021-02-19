@@ -75,12 +75,12 @@ Purpose:    Project 2 HTML Page.
                 <div class="section-title">Validation Status</div>
                 <div class="valid-table">
 
-                    <form method="POST" name="validator" action="http://judah.cedarville.edu/echo.php" class="form" id="form_1" onsubmit="return(validate(digits))">
+                    <form method="POST" name="validator" action="http://judah.cedarville.edu/echo.php" class="form" id="form_1" onsubmit="validate(digits)">
 
                         <fieldset class="field">
                            <legend class="box-title">Do you have a life?</legend>
-                            <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Yes</label>
-                            <input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label>
+                            <input type="radio" required name="life" id="r1" value="yes"><label for="r1">Yes</label>
+                            <input type="radio" required name="life" id="r2" value="no"><label for="r2">No</label>
                         </fieldset>
 
                         <label for="ssn-box" class="box-title">What's your SSN?</label>
